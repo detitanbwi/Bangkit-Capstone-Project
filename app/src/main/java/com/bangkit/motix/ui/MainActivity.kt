@@ -1,4 +1,4 @@
-package com.bangkit.motix
+package com.bangkit.motix.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
