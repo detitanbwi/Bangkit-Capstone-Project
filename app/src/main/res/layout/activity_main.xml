@@ -6,13 +6,165 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <ImageView
+        android:id="@+id/background_top"
+        android:layout_width="450dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="-50dp"
+        android:contentDescription="@string/background_top"
+        android:src="@drawable/background_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/background_bottom"
+        android:layout_width="450dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="-30dp"
+        android:contentDescription="@string/background_bottom"
+        android:src="@drawable/background_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/welcome"
+        android:textStyle="bold"
+        android:textColor="?attr/colorSurface"
+        style="@style/TextAppearance.MdcTypographyStyles.Headline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="@font/open_sans" />
+
+    <ImageView
+        android:id="@+id/logo_motix"
+        android:layout_width="129dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="-16dp"
+        android:layout_marginEnd="-10dp"
+        android:src="@drawable/logo_motix_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logo_motix_gray" />
+
+    <TextView
+        android:id="@+id/tv_title_hoax"
+        style="@style/TextAppearance.MdcTypographyStyles.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/title_hoax"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_top" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLinkEditTextLayout"
+        style="@style/Widget.App.TextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/input_link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_hoax"
+        app:startIconContentDescription="@string/input_link">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputLinkEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_detect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/detect"
+        app:icon="@drawable/baseline_search_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLinkEditTextLayout" />
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        style="@style/TextAppearance.MdcTypographyStyles.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_detect" />
+
+    <TextView
+        android:id="@+id/tv_valid_invalid"
+        style="@style/TextAppearance.MdcTypographyStyles.Headline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/valid"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+    <ImageView
+        android:id="@+id/image_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon_verified"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_valid_invalid"
+        app:layout_constraintStart_toEndOf="@+id/tv_valid_invalid"
+        app:layout_constraintTop_toTopOf="@+id/tv_valid_invalid" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        style="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/description"
+        app:layout_constraintStart_toStartOf="@+id/inputLinkEditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_valid_invalid" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="20dp"
+        android:orientation="horizontal"
+        style="@style/Widget.MaterialComponents.CardView"
+        app:layout_constraintEnd_toEndOf="@+id/inputLinkEditTextLayout"
+        app:layout_constraintStart_toStartOf="@+id/inputLinkEditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description">
+
+        <TextView
+            android:id="@+id/result_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MdcTypographyStyles.Body2"
+            android:layout_margin="16dp"
+            android:text="@string/result_description_detect"/>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Motix</string>
+    <string name="background_top">Background Atas</string>
+    <string name="background_bottom">Background Bawah</string>
+    <string name="welcome">Selamat Datang Di Motix</string>
+    <string name="logo_motix_gray">Logo Motix Gray</string>
+    <string name="title_hoax">Deteksi Hoax</string>
+    <string name="input_link">Masukkan Link</string>
+    <string name="detect">Deteksi</string>
+    <string name="result">Hasil</string>
+    <string name="valid">Valid</string>
+    <string name="description">Deskripsi</string>
+    <string name="result_description_detect">Hasil Dari Deteksi Link Di atas Didapatkan Hasil Valid dikarenakan sumber terpercaya dan sudah dikonfirmasi keasliannya</string>
 </resources>
