@@ -1,4 +1,7 @@
 package com.bangkit.motix.ui.viewmodel
 
-class MainViewModel {
+import androidx.lifecycle.ViewModel
+import com.bangkit.motix.data.Repository
+
+class MainViewModel(private val repository: Repository): ViewModel(){
 }
