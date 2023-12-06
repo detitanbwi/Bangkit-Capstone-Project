@@ -2,7 +2,7 @@
     <string name="app_name">Motix</string>
     <string name="background_top">Background Atas</string>
     <string name="background_bottom">Background Bawah</string>
-    <string name="welcome">Selamat Datang Di Motix</string>
+    <string name="welcome">Selamat Datang\nDi Motix</string>
     <string name="logo_motix_gray">Logo Motix Gray</string>
     <string name="title_hoax">Deteksi Hoax</string>
     <string name="input_link">Masukkan Link</string>

@@ -9,22 +9,22 @@
 
     <ImageView
         android:id="@+id/background_top"
-        android:layout_width="450dp"
+        android:layout_width="420dp"
         android:layout_height="240dp"
         android:layout_marginTop="-50dp"
         android:contentDescription="@string/background_top"
-        android:src="@drawable/background_top"
+        android:src="@drawable/back_new_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/background_bottom"
-        android:layout_width="450dp"
-        android:layout_height="400dp"
+        android:layout_width="420dp"
+        android:layout_height="350dp"
         android:layout_marginBottom="-30dp"
         android:contentDescription="@string/background_bottom"
-        android:src="@drawable/background_bottom"
+        android:src="@drawable/back_new_bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -32,7 +32,7 @@
 
     <TextView
         android:id="@+id/tv_welcome"
-        android:layout_width="130dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"

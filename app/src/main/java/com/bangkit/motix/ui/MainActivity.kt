@@ -2,6 +2,7 @@ package com.bangkit.motix.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.bangkit.motix.databinding.ActivityMainBinding
 
@@ -13,8 +14,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
+
+        setThemeLightOnly()
     }
 
+    private fun setThemeLightOnly(){
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+    }
     override fun onDestroy() {
         super.onDestroy()
         binding = null
