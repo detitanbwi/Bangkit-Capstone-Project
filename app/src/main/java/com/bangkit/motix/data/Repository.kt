@@ -13,11 +13,11 @@ class Repository private constructor(private val apiService: ApiService) {
     fun checkResult(text: String) = liveData {
         emit(Result.Loading)
         try {
-            val reponse = apiService.checkDetect(text)
-            emit(Result.Success(reponse))
+            val response = apiService.checkDetect(text)
+            emit(Result.Success(response))
         } catch (e: retrofit2.HttpException) {
             val jsonString = e.response()?.errorBody()?.string()
-            Log.d(TAG, "StoryRepository: $jsonString")
+            Log.d(TAG, "Repository : $jsonString")
             val errorBody = Gson().fromJson(jsonString, )
             val errorMessage = errorBody.message
             emit(Result.Error(errorMessage))
