@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
         setThemeLightOnly()
     }
 
+
+    private fun setUpAction(){
+        binding?.btnDetect?.setOnClickListener {  }
+    }
+
     private fun setThemeLightOnly(){
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
     }
