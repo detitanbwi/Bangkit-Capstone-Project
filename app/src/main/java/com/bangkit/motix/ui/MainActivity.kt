@@ -15,26 +15,28 @@ class MainActivity : AppCompatActivity() {
         ViewModelFactory.getInstance(this)
     }
 
-    private var binding: ActivityMainBinding? = null
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding?.root)
+        setContentView(binding.root)
+
+        with(binding){
+            btnDetect.setOnClickListener {
+                viewModel.checkDetect(this.inputLinkEditText.text.toString())
+            }
+        }
+
+        viewModel.response.observe(this){
+
+        }
 
         setThemeLightOnly()
     }
 
 
-    private fun setUpAction(){
-        binding?.btnDetect?.setOnClickListener {  }
-    }
-
     private fun setThemeLightOnly(){
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-    }
-    override fun onDestroy() {
-        super.onDestroy()
-        binding = null
     }
 }
