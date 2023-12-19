@@ -5,10 +5,12 @@
     <string name="welcome">Selamat Datang\nDi Motix</string>
     <string name="logo_motix_gray">Logo Motix Gray</string>
     <string name="title_hoax">Deteksi Hoax</string>
-    <string name="input_link">Masukkan Link</string>
+    <string name="input_link">Masukkan Teks Berita</string>
     <string name="detect">Deteksi</string>
     <string name="result">Hasil</string>
     <string name="valid">Valid</string>
+    <string name="invalid">Hoax!</string>
+    <string name="empty_text_warning">Isi teks berita terlebih dahulu!</string>
     <string name="description">Deskripsi</string>
     <string name="result_description_detect">Hasil Dari Deteksi Link Di atas Didapatkan Hasil Valid dikarenakan sumber terpercaya dan sudah dikonfirmasi keasliannya</string>
 </resources>

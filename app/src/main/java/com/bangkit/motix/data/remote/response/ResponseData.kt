@@ -4,17 +4,20 @@ import com.google.gson.annotations.SerializedName
 
 data class ResponseData(
 
-	@field:SerializedName("valid")
+	@field:SerializedName("data")
 	val valid: Valid
 )
 
 data class Valid(
 
-	@field:SerializedName("link")
-	val link: String,
+	@field:SerializedName("Label")
+	val label: Int,
 
 	@field:SerializedName("message")
 	val message: String,
+
+	@field:SerializedName("text")
+	val text: String,
 
 	@field:SerializedName("validate")
 	val validate: String

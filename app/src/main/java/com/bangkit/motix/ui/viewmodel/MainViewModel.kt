@@ -20,11 +20,12 @@ class MainViewModel(private val repository: Repository): ViewModel(){
     fun checkDetect(input: String) {
         viewModelScope.launch {
             try {
-                val result = repository.checkDetect(Request(input))
+                Log.d("SampaiVM",Request(input).toString())
+                val result = repository.checkDetect(input)
                 _response.value = result
             } catch (e: Exception) {
                 // Handle error, jika diperlukan
-                Log.d("checkDetect","Failed to get data")
+                Log.d("checkDetect", e.toString())
             }
         }
     }
