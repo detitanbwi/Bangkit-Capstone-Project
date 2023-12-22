@@ -2,7 +2,7 @@
 
 ## Bangkit Capstone Project 2023 Batch 2
 
-Bangkit Capstone Team ID : CH2-PS427 <br>
+Bangkit Capstone Team ID : CH2-PS427 <br><br>
 Here is our repository for Bangkit 2023 Capstone project. Our team consist of 3 Machine Learning, 2 Mobile Development, and 2 Cloud Computing.
 
 ## Our Warriors
