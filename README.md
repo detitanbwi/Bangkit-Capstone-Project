@@ -29,6 +29,10 @@ Motix is innovative hoax detection application powered by artificial intelligenc
 
 ![Motix](https://github.com/detitanbwi/Bangkit-Capstone-Project/blob/main/Asset/system_architecture.jpg)
 
+## API Documentations
+
+API Documentation Endpoint : [Endpoint](https://github.com/detitanbwi/Bangkit-Capstone-Project/blob/main/Cloud%20Computing/Motix%20Test%20final.postman_collection.json)
+
 ## Repositories
 
 |    Branch Name     |                                         Link                                                       |
