@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "098342ba-7e4f-46fa-9cc4-d312140ffca4",
+		"name": "Motix Test 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30252308"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Anies di Milad BKMT: Pengajian Menghasilkan Ibu-ibu Berpengetahuan  Mantan Gubernur DKI Jakarta Anies Baswedan menghadiri acara tasyakuran Milad ke-42.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://motixapi-cslr3gqxnq-et.a.run.app/validate"
+			},
+			"response": []
+		}
+	]
+}
